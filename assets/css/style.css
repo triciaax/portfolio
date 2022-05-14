@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: #E0DFDD;
+  margin: 0px;
+}
+
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.85em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+/* Container for flexboxes for entire site, special rules follow */
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+/* Create two equal columns */
+.column2 {
+flex: 50%;
+padding: 5px;
+}
+
+/* Create three equal columns */
+.column3 {
+flex: 33.33%;
+padding: 5px;
+}
+
+.column3-footer {
+  flex: 33.33%;
+  }
+
+/* Create four equal columns */
+.column4 {
+flex: 25%;
+padding: 5px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+.column4 {
+  flex: 50%;
+}
+
+.column3, .column2, .column3-footer{
+    flex: 100%;
+}
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.row {
+  flex-direction: column;
+}
+}
+
+
+/* navigation */
+.navigation a{
+text-decoration: none;
+font-size: 2.5vmax;
+color: #000;
+}
+
+.navigation li {
+list-style-type: none;
+display: inline-block;
+}
+
+.navigation {
+padding-top: 10px;
+word-spacing: 30px;
+text-align: right;
+}
+
+.logo img {
+padding-top: 10px;
+padding-left: 10px;
+max-width: 100%;
+}
+
+/* hero */
+.hero h1 {
+font-weight: lighter;
+font-size: 4vmax;
+color: #000;
+margin: 20px;
+font-family: 'Lato', sans-serif;
+padding: 50px 0px 50px 0px;
+text-align: center;
+}
+
+/* portfolio starts */
+.portfolio {
+margin-left: 10%;
+margin-right: 10%;
+}
+/* portfolio ends */
+
+
+/* strategy start */
+.strategy img {
+  width: 100%;
+}
+
+.strategy {
+  text-align: center;
+  line-height: 25px;
+}
+
+/* strategy end */
+
+/* per assignemnt here is the development styling, one priority will be bigger than the others */
+.container-development {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+margin-right: 10%;
+}
+
+.development-row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+}
+
+.development-column {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.development-column img {
+  max-width: 100%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .development-column {
+    flex: 50%;
+  }
+  
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+  .development-row {
+    flex-direction: column;
+  }
+  }
+  
+
+/* development ends */
+
+/* about me */
+.aboutme-container {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px;
+  }
+
+.aboutme-photo {
+  text-align: right;
+}
+
+.aboutme-photo img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.aboutme {
+  text-align: left;
+  width: 100%;
+  padding-top: 18%;
+}
+
+
+/* footer styling */
+.footer {
+padding-top: 20px;
+width: 100%;
+background-color: #bcb9b5;
+}
+
+.copyright {
+  text-align: left;
+}
+
+.cell {
+  text-align: center;
+}
+
+.email {
+  text-align: right;
+}

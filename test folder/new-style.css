@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+  body, html {
+    height: 100%;
+    background-color: #E0DFDD;
+}
+
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.85em;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two equal columns */
+.column2 {
+  flex: 50%;
+  padding: 5px;
+}
+
+/* Create three equal columns */
+.column3 {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* Create four equal columns */
+.column4 {
+  flex: 25%;
+  padding: 5px;
+}
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column4 {
+    flex: 50%;
+  }
+
+  .column3, .column2 .aboutme-column2 {
+      flex: 100%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+}
+
+/* navigation */
+.navigation a{
+  text-decoration: none;
+  font-size: 1.85em;
+}
+
+.navigation li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navigation {
+  padding-top: 10px;
+  word-spacing: 30px;
+  text-align: right;
+}
+
+.logo img {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 450px;
+}
+
+/* hero */
+.hero h1 {
+  font-weight: lighter;
+  font-size: 5vw;
+  color: #000;
+  margin: 20px;
+  font-family: 'Lato', sans-serif;
+  padding: 50px 0px 250px 0px;
+}
+
+/* about me images */
+.about-me-box {
+  padding-top: 10%;
+}
+
+.about-me-bio {
+  padding-top: 10%;
+}
+
+.about-me-box img{
+    width: 350px;
+    border-radius: 100%;
+}
+
+/* portfolio starts */
+.portfolio {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* portfolio ends */
+
+
+/* strategy start */
+.strategy img {
+    width: 100%;
+}
+
+.strategy {
+    text-align: center;
+    line-height: 25px;
+}
+
+/* strategy end */
+
+/* development starts */
+
+.development img {
+    width: 100%;
+}
+
+.development {
+    text-align: center;
+    line-height: 25px;
+}
+
+/* development ends */
+
+/* contact info starts */
+.contact {
+margin-top: 10%;
+margin-bottom: 10%;
+margin-left: 20%;
+margin-right: 20%;
+border: 1px solid #000;
+background-color: #fff;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 70px 0;
+}
+
+.contact-form button {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.contact-form {
+  padding: 50px;
+  color: #000;
+  margin: 0 auto; 
+}
+
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
