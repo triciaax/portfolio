@@ -23,6 +23,8 @@ h3 {
 h4 {
   font-size: 1.5em;
   font-weight: lighter;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* Container for flexboxes for entire site, special rules follow */
@@ -158,6 +160,7 @@ margin-right: 10%;
 
 .development-column img {
   max-width: 100%;
+  padding-top: 20px;
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
@@ -203,7 +206,8 @@ margin-right: 10%;
 
 /* footer styling */
 .footer {
-padding-top: 20px;
+padding-top: 30px;
+padding-bottom: 10px;
 padding-left: 5px;
 padding-right: 5px;
 width: 100%;
@@ -211,7 +215,7 @@ background-color: #bcb9b5;
 }
 
 .copyright {
-  text-align: left;
+  text-align: center;
 }
 
 .cell {
@@ -219,5 +223,5 @@ background-color: #bcb9b5;
 }
 
 .email {
-  text-align: right;
+  text-align: center;
 }
